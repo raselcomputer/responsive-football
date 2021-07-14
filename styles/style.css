@@ -10,7 +10,11 @@ body{
     padding: 0;
     margin: 0;
 }
-
+section{
+    padding-top: 70px;
+    width: 100%;
+    background: #ebe8e8;
+}
 /* Header Area  */
 .header-area{
     width: 100%;
@@ -103,5 +107,45 @@ nav ul li a{
     transition: transform 1s ease;
 }
 .header-banner img:hover{
-    transform: translateY(20px);
+    transform: translateY(10px);
+}
+
+/* Top Players */
+.top-container{
+    width: 1050px;
+    height: auto;
+    margin: 0 auto;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+}
+.player{
+    background: #fff;
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.7s ease, grayscale 0.7s ease;
+}
+.player:hover{
+    transform: translateY(-10px);
+    filter: grayscale(100);
+}
+.player-info h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #18191F;
+}
+.player-info p{
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: justify;
+}
+.player-image img{
+    width: 100%;
+    border-radius: 10px;
 }
